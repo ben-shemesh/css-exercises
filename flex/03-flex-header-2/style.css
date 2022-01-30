@@ -1,28 +1,42 @@
 /* this is some magical font-importing.  
 you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
 
 body {
+  /* border: 5px solid orange; */
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  display: flex;
+  flex: 1;
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
+  /* border: 5px solid green; */
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+  /* display: flex; */
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 48px;
-  height:  48px;
+  height: 48px;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -30,6 +44,7 @@ body {
 }
 
 button {
+  display: flex;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -38,11 +53,37 @@ button {
 }
 
 a {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 5px solid rgb(194, 24, 24); */
+  margin: 0px 5px;
+  padding: 0px;
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
 ul {
+  /* border: 5px solid black; */
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-right: 13px;
+  margin-left: 13px;
+  /* flex: 1; */
   list-style-type: none;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  /* border: 5px solid blue; */
+}
+.notifications {
+  margin: 25px 0px;
+  /* border: 8px rgb(124, 73, 73) solid; */
+  /* flex: 0 1 3px; */
 }
