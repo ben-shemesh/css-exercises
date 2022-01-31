@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -16,13 +18,55 @@ body {
 }
 
 .modal {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  /* flex-direction: column; */
+  /* border: 5px rgb(37, 255, 190) solid; */
   background: white;
+  padding: 10px;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.all1 {
+  display: flex;
+  flex-direction: column;
+  /* border: rgb(19, 11, 11) solid 5px; */
+  padding: 5px;
+  margin-right: 4px;
+}
+.all {
+  /* border: rgb(233, 214, 107) solid 5px; */
+  margin-left: 3px;
 }
 
+.head-x {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  /* border: 5px rgb(72, 255, 0) solid; */
+  margin: 3px;
+}
+.header {
+  font-weight: bold;
+  /* margin-left: 5px; */
+  /* border: 5px rgb(0, 225, 255) solid; */
+}
+.text-box {
+  display: flex;
+  /* border: #888 solid 5px; */
+  /* margin: 8px; */
+  /* width: 325px; */
+}
+.text {
+  /* border: 5px red solid; */
+  margin: 3px;
+  /* width: 3px; */
+}
 .icon {
+  /* border: 5px rgb(76, 0, 255) solid; */
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -34,8 +78,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+.icon2 {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  /* border: 5px rgb(119, 0, 255) solid; */
+  /* display: flex; */
+  flex-direction: column;
+}
 
 .close-button {
+  display: flex;
+  flex-direction: row;
+  /* border: 5px red solid; */
+
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -46,8 +102,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 
+.button1 {
+  display: flex;
+  flex: 1;
+  /* border: rgb(245, 7, 213) 5px solid; */
+  margin: 3px;
+}
 button {
   padding: 8px 16px;
   border-radius: 8px;
@@ -57,6 +120,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-right: 4px;
 }
 
 button.cancel {
